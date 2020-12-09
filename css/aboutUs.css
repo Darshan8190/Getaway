@@ -1,0 +1,783 @@
+/* navigation font */
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Navigation */
+nav{
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    "logo navigation navigation navigation navigation";
+    padding-top: 10px;
+}
+
+nav .logo{
+    grid-area: logo;
+    font-size: 1.8rem;
+    padding:0 60px;
+    letter-spacing: 0.5px;
+    color: #CF4532;
+    font-family: 'Pacifico', cursive
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #CF4532;
+}
+
+nav ul{
+    display: inline-block;
+    grid-area: navigation;
+    text-align: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+nav ul li a{
+    color: rgb(41, 4, 19);
+} 
+
+/* section 1 */
+#section1 {
+    background: url(../images/aboutUsMainImage.jpg) no-repeat center center;
+    color : #ffffff;
+    background-size: cover;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "section1";
+}
+
+#section1 div{
+    grid-area: section1;
+    padding: 70px 110px;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+#section1 div h1{
+    font-size: 5rem;
+    line-height: 5.3rem;
+}
+
+/* section 2 */
+#aboutUsStory_section2 {
+    padding: 70px 110px;
+    background-color: #E9E2D3;
+}
+
+#aboutUsStory_section2 h2{
+    font-size: 2.7rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+#aboutUsStory_section2 > div{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "cabinImage cabinDescription";
+    min-height: 50vh;
+    grid-column-gap: 80px;
+}
+
+#aboutUsStory_section2 > div .cabinImg{
+    background: url(../images/travelSection2AboutUS.jpg) top center no-repeat;
+    background-size: cover;
+    grid-area: cabinImage;
+} 
+
+#aboutUsStory_section2 > div .cabinDescription{
+    grid-area: cabinDescription;
+}
+
+#aboutUsStory_section2 > div .cabinDescription h3{
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+}
+
+#aboutUsStory_section2 > div .cabinDescription p{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+#aboutUsStory_section2 > div .cabinDescription input{
+    margin-top: 55px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #CF4532;
+    color: #ffffff;
+}
+
+/* section 3 */
+#records_section3 {
+    padding: 70px 110px;
+}
+
+#records_section3 > div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "happyCustomers_step1 destinationPlaces_step2 cabins_step3 countries_step4";
+    grid-column-gap: 50px;
+    text-align: center;
+}
+
+#records_section3 div .step1{
+    grid-area: happyCustomers_step1;
+}
+
+#records_section3 div .step2{
+    grid-area: destinationPlaces_step2;
+}
+
+#records_section3 div .step3{
+    grid-area: cabins_step3;
+}
+
+#records_section3 div .step4{
+    grid-area: countries_step4;
+}
+
+.stepName{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 15px;
+}
+
+.stepDescription{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+
+/* section 4 */
+#whyChooseUS_section4 {
+    padding: 70px 110px;
+    background-color: #E9E2D3;
+    display: grid;
+    grid-template-areas: 
+    "whyChooseUs"
+    "whyChooseUsServices";
+}
+
+#whyChooseUS_section4 h2{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    grid-area: whyChooseUs;
+}
+
+#whyChooseUS_section4 > div{
+    grid-area: whyChooseUsServices;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "packingList campfireRecipes juneReflections";
+    grid-column-gap: 30px;
+}
+
+#whyChooseUS_section4 > div div{
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#whyChooseUS_section4 > div div h3{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 600; 
+    margin-top: 30px;
+}
+
+#whyChooseUS_section4 > div div input{
+    margin: 30px 0;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    /* font-weight: 600; */
+    background-color: #CF4532;
+    color: #ffffff;
+}
+
+#whyChooseUS_section4 > div .packingList{
+    grid-area: packingList;
+}
+
+#whyChooseUS_section4 > div .packingList div{
+    background: url(../images/fastServices.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+#whyChooseUS_section4 > div .campfireRecipes{
+    grid-area: campfireRecipes;
+}
+
+#whyChooseUS_section4 > div .campfireRecipes div{
+    background: url(../images/greatTeam.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+#whyChooseUS_section4 > div .juneReflections{
+    grid-area: juneReflections;
+}
+
+#whyChooseUS_section4 > div .juneReflections div{
+    background: url(../images/bestDeals.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+/* section 5 */
+#services_section5 {
+    padding: 70px 110px;
+}
+
+#services_section5 h2{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+#services_section5 > div{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "specialActivities_step1 travelArrangements_step2 privateGuide_step3 locationManager_step4";
+    grid-column-gap: 50px;
+    text-align: center;
+}
+
+#services_section5 div .step1{
+    grid-area: specialActivities_step1;
+}
+
+#services_section5 div .step2{
+    grid-area: travelArrangements_step2;
+}
+
+#services_section5 div .step3{
+    grid-area: privateGuide_step3;
+}
+
+#services_section5 div .step4{
+    grid-area: locationManager_step4;
+}
+
+.stepName{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 15px;
+}
+
+.stepDescription{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+
+/* footer */
+footer{
+    background: #95AFBF;
+    color: #1f0101;
+    display: grid;
+    grid-template-areas: 
+    "companyAddress"
+    "copyRight";
+    font-size: 1.1rem;
+}
+
+footer .companyAddress{
+    grid-area: companyAddress;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "addressInfo socialLinks";
+    padding: 60px 0 40px 0;
+}
+
+footer .copyRight{
+    grid-area: copyRight;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+footer .companyAddress p,dl{
+    padding: 0 50px;
+    margin:0 80px;  
+}
+
+footer .companyAddress p {
+    grid-area: addressInfo;
+    text-align: center;
+}
+
+footer .companyAddress p a{
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    color: rgb(41, 4, 19);
+}
+
+footer .companyAddress p a:hover{
+    color: #CF4532;
+}
+
+footer .companyAddress p span{
+    padding-top: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+footer .companyAddress dl{
+    grid-area: socialLinks;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .companyAddress dl dt{
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 10px;
+}
+
+footer dl dt a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: 99px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+footer dl dt.twitter a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-twitter-64.png);
+}
+
+footer dl dt.instagram a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-instagram-64.png);
+}
+
+footer dl dt.facebook a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-facebook-f-64.png);
+}
+
+footer dl dt.linkedin a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-linkedin-2-64.png);
+}
+
+
+/* Tablet Mode */
+@media only screen and (max-width: 1024px) {
+    nav{
+        
+        grid-template-areas: 
+        " . . logo . ."
+        "navigation navigation navigation navigation navigation";
+        padding-top: 10px;
+    }
+    
+    nav ul{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    
+/* section 1 */
+#section1 {
+    background: url(../images/aboutUsMainImage.jpg) no-repeat center center;
+    color : #ffffff;
+    background-size: cover;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "section1";
+}
+
+#section1 div{
+    margin-top: 20vh;
+}
+
+#section1 div h1{
+    font-size: 4rem;
+}
+
+/* section 2 */
+
+
+#aboutUsStory_section2 h2{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+}
+
+#aboutUsStory_section2 > div{
+    grid-column-gap: 50px;
+}
+
+#aboutUsStory_section2 > div .cabinImg{
+    background: url(../images/travelSection2AboutUS.jpg) bottom center no-repeat;
+    background-size: cover;
+    grid-area: cabinImage;
+} 
+
+#aboutUsStory_section2 > div .cabinDescription h3{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+#aboutUsStory_section2 > div .cabinDescription p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+   
+}
+
+#aboutUsStory_section2 > div .cabinDescription input{
+    margin-top: 55px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+   
+}
+
+/* section 3 */
+
+#records_section3 .stepName{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#records_section3 .stepDescription{
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* section 4 */
+
+#whyChooseUS_section4 {
+    padding: 70px 50px;
+}
+#whyChooseUS_section4 h2{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+}
+
+#whyChooseUS_section4 > div div h3{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+   
+}
+
+#whyChooseUS_section4 > div div input{
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#whyChooseUS_section4 > div .packingList div{
+    background: url(../images/fastServices.jpg) no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+}
+
+#whyChooseUS_section4 > div .campfireRecipes div{
+    background: url(../images/greatTeam.jpg) no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+}
+
+#whyChooseUS_section4 > div .juneReflections div{
+    background: url(../images/bestDeals.jpg) no-repeat center center;
+    background-size: cover;
+    height: 30vh;
+}
+
+/* section 5 */
+#services_section5 {
+    padding: 70px 110px;
+}
+
+#services_section5 h2{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+}
+
+#services_section5 > div{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "specialActivities_step1 travelArrangements_step2 privateGuide_step3 locationManager_step4";
+    grid-column-gap: 50px;
+    text-align: center;
+}
+
+.stepName{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.stepDescription{
+    margin-top: 20px;
+    font-size: 1.1rem; 
+}
+
+/* footer */
+footer{
+    font-size: 1rem;
+}
+
+footer .companyAddress{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    ". addressInfo socialLinks .";
+}
+
+footer .copyRight{
+    font-size: 0.9rem;
+}
+
+footer .companyAddress p a{
+    font-size: 1.1rem;
+}
+
+footer .companyAddress p span{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+footer .companyAddress dl{
+    grid-area: socialLinks;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .companyAddress dl dt{
+    margin-right: 0px;
+}
+
+}
+
+
+/* Mobile Mode */
+@media only screen and (max-width: 768px) {
+    
+/* section 1 */
+
+#section1 div{
+    margin-top: 15vh;
+}
+
+#section1 div h1{
+    font-size: 3.5rem;
+    line-height: 3.8
+}
+
+/* section 2 */
+#aboutUsStory_section2 {
+    padding: 70px 50px;
+   
+}
+
+#aboutUsStory_section2 > div{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "cabinImage cabinDescription";
+    min-height: 40vh;
+    grid-column-gap: 50px;
+}
+
+#aboutUsStory_section2 h2{
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+}
+
+#aboutUsStory_section2 > div{
+    grid-column-gap: 50px;
+}
+
+#aboutUsStory_section2 > div .cabinDescription h3{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+#aboutUsStory_section2 > div .cabinDescription p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+   
+}
+
+#aboutUsStory_section2 > div .cabinDescription input{
+    margin-top: 55px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+   
+}
+
+/* section 3 */
+
+#records_section3 .stepName{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#records_section3 .stepDescription{
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+/* section 4 */
+
+#whyChooseUS_section4 {
+    padding: 70px 50px;
+}
+#whyChooseUS_section4 h2{
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+}
+
+#whyChooseUS_section4 > div div h3{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+   
+}
+
+#whyChooseUS_section4 > div div input{
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#whyChooseUS_section4 > div .packingList div{
+    background: url(../images/fastServices.jpg) no-repeat center center;
+    background-size: cover;
+    height: 20vh;
+}
+
+#whyChooseUS_section4 > div .campfireRecipes div{
+    background: url(../images/greatTeam.jpg) no-repeat center center;
+    background-size: cover;
+    height: 20vh;
+}
+
+#whyChooseUS_section4 > div .juneReflections div{
+    background: url(../images/bestDeals.jpg) no-repeat center center;
+    background-size: cover;
+    height: 20vh;
+}
+
+/* section 5 */
+#services_section5 {
+    padding: 70px 30px;
+}
+
+#services_section5 h2{
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+}
+
+#services_section5 > div{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "specialActivities_step1 travelArrangements_step2 privateGuide_step3 locationManager_step4";
+    grid-column-gap: 50px;
+    text-align: center;
+}
+
+.stepName{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.stepDescription{
+    margin-top: 20px;
+    font-size: 1rem; 
+}
+
+/* footer */
+footer{
+    font-size: 1rem;
+}
+
+footer .companyAddress{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    ". addressInfo socialLinks .";
+}
+
+footer .copyRight{
+    font-size: 0.9rem;
+}
+
+footer .companyAddress p a{
+    font-size: 1.1rem;
+}
+
+footer .companyAddress p span{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+footer .companyAddress dl{
+    grid-area: socialLinks;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .companyAddress dl dt{
+    margin-right: 0px;
+}
+}

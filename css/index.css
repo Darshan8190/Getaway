@@ -1,0 +1,1181 @@
+/* navigation font */
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Navigation */
+nav{
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    "logo navigation navigation navigation navigation";
+    padding-top: 10px;
+}
+
+nav .logo{
+    grid-area: logo;
+    font-size: 1.8rem;
+    padding:0 60px;
+    letter-spacing: 0.5px;
+    color: #CF4532;
+    font-family: 'Pacifico', cursive
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #CF4532;
+}
+
+nav ul{
+    display: inline-block;
+    grid-area: navigation;
+    text-align: right;
+    margin-right: 50px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+nav ul li a{
+    color: rgb(41, 4, 19);
+} 
+
+/* section 1 */
+#section1 {
+    background: url(../images/section1.jpg) no-repeat center center;
+    color : #ffffff;
+    background-size: cover;
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "section1";
+}
+
+#section1 div{
+    grid-area: section1;
+    padding: 70px 110px;
+}
+
+#section1 div h1{
+    font-size: 4.1rem;
+    line-height: 4.4rem;
+}
+
+#section1 div h3{
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+    margin-top: 35px;
+    font-weight: 500;
+}
+
+#section1 div input{
+    margin-top: 35px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #CF4532;
+    color: #ffffff;
+}
+
+/* section 2 */
+#ourMission_section2{
+    display: grid;
+    grid-template-areas: 
+    "section2";
+}
+
+#ourMission_section2 div{
+    grid-area: section2;
+    background-color: #4a4a6e;
+    color: #ffffff;
+    text-align: center;
+}
+
+#ourMission_section2 div h2{
+    font-size: 2.5rem;
+    padding-top: 70px;
+    line-height: 2.8rem;
+}
+
+#ourMission_section2 div p{
+    font-size: 1.3rem;
+    padding-top: 30px;
+    line-height: 1.8rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 70px;
+}
+
+#ourMission_section2 div .section2Img{
+    background: url(../images/section2.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+/* section 3 */
+#howItWorks_section3 {
+    padding: 70px 110px;
+}
+
+#howItWorks_section3 h2{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+#howItWorks_section3 > div{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "bookYourEscape_step1 sitBack_step2 justBe_step3";
+    grid-column-gap: 100px;
+    text-align: center;
+}
+
+#howItWorks_section3 div .step1{
+    grid-area: bookYourEscape_step1;
+}
+
+#howItWorks_section3 div .step2{
+    grid-area: sitBack_step2;
+}
+
+#howItWorks_section3 div .step3{
+    grid-area: justBe_step3;
+}
+
+.stepNumber{
+    color: #5a5252;
+    font-size: 1rem;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.stepName{
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-top: 10px;
+}
+
+.stepDescription{
+    margin-top: 15px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+
+/* section 4 */
+#ourVision_section4{
+    background-color: #95AFBF;
+    padding: 70px 110px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "visionName_h3 visionLink_p visionLink_p";
+    grid-column-gap: 70px;
+    font-weight: bold;
+}
+
+#ourVision_section4 h3{
+    grid-area: visionName_h3;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+#ourVision_section4 p{
+    grid-area: visionLink_p;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+/* section 5 */
+#theCabins_section5 {
+    padding: 70px 110px;
+    background-color: #E9E2D3;
+}
+
+#theCabins_section5 h2{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+}
+
+#theCabins_section5 > div{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "cabinImage cabinDescription";
+    min-height: 30vh;
+    grid-column-gap: 80px;
+}
+
+#theCabins_section5 > div .cabinImg{
+    background: url(../images/section5.jpg) center center no-repeat;
+    background-size: cover;
+    grid-area: cabinImage;
+} 
+
+#theCabins_section5 > div .cabinDescription{
+    grid-area: cabinDescription;
+}
+
+#theCabins_section5 > div .cabinDescription h3{
+    font-size: 1.8rem;
+    line-height: 2.0rem;
+}
+
+#theCabins_section5 > div .cabinDescription p{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+#theCabins_section5 > div .cabinDescription input{
+    margin-top: 55px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #CF4532;
+    color: #ffffff;
+}
+
+/* section 7 */
+#customerReview_section7{
+    background-color: #4a4a6e;
+    color: #ffffff;
+    padding: 70px 110px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "blockquote blockquote blockquote"
+    ". . customerName";
+}
+
+#customerReview_section7 blockquote{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    grid-area: blockquote;
+}
+
+#customerReview_section7 p{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.5px;
+    grid-area: customerName;  
+    margin-top: 75px;  
+    text-align: end;
+}
+
+#customerReview_section7 input{
+    margin-top: 55px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #CF4532;
+    color: #ffffff;
+    grid-area: bookNowButton;
+}
+
+/* section 8 */
+#nominateYourCity_section8{
+    background-color: #95AFBF;
+    padding: 70px 110px;
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "nominateYourCity"
+    "userInputes";
+}
+
+#nominateYourCity_section8 h2{
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    grid-area: nominateYourCity;
+}
+
+#nominateYourCity_section8 div{
+    margin-top: 40px;
+    display: grid;
+    grid-area: userInputes;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: 
+    "nominateYourCity nominateYourCity nominateYourCity nominateYourCity nominateYourCity nominateYourCity nominateYourCity"
+    ". firstName . zipCode . email ."
+    ". . . nominateButton . . .";
+    grid-column-gap: 15px;
+}
+
+#nominateYourCity_section8 input{
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+}
+
+#nominateYourCity_section8 #firstName{
+    grid-area: firstName;
+}
+
+#nominateYourCity_section8 #zipCode{
+    grid-area: zipCode;
+}
+
+#nominateYourCity_section8 #email{
+    grid-area: email;
+}
+
+#nominateYourCity_section8 .nominateButton{
+    background-color: #CF4532;
+    grid-area: nominateButton;
+    margin-top: 40px;
+    color: #ffffff;
+}
+
+/* section 9 */
+#theJournal_section9 {
+    padding: 70px 110px;
+    display: grid;
+    grid-template-areas: 
+    "theJournal"
+    "journalDataListDIV";
+}
+
+#theJournal_section9 h2{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    grid-area: theJournal;
+}
+
+#theJournal_section9 > div{
+    grid-area: journalDataListDIV;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "packingList campfireRecipes juneReflections";
+    grid-column-gap: 30px;
+}
+
+#theJournal_section9 > div div{
+    background-color: #e6e0e0;
+    border-radius: 4px;
+}
+
+#theJournal_section9 > div div h3{
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    font-weight: 600; 
+    padding: 30px 30px 0 30px;
+}
+
+#theJournal_section9 > div div p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 30px;
+}
+
+#theJournal_section9 > div .packingList{
+    grid-area: packingList;
+}
+
+#theJournal_section9 > div .packingList div{
+    background: url(../images/camp1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+#theJournal_section9 > div .campfireRecipes{
+    grid-area: campfireRecipes;
+}
+
+#theJournal_section9 > div .campfireRecipes div{
+    background: url(../images/camp2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+#theJournal_section9 > div .juneReflections{
+    grid-area: juneReflections;
+}
+
+#theJournal_section9 > div .juneReflections div{
+    background: url(../images/capm3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+/* section 10 */
+#bookYourCabin_section10{
+    background-color: #E9E2D3;
+    padding: 70px 110px;
+    text-align: center;
+}
+
+#bookYourCabin_section10 h2{
+    font-size: 1.7rem;
+    line-height: 2.0rem;
+}
+
+#bookYourCabin_section10 input{
+    margin-top: 30px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #CF4532;
+    color: #ffffff;
+}
+
+
+/* section 11 */
+#getUpdates_section11 {
+    display: grid;
+    grid-template-areas: 
+    "getUpdatesImg getUpdatesText";
+    min-height: 70vh;
+}
+
+#getUpdates_section11 .getUpdatesImg {
+    background: url("../images/section11.jpg") center center no-repeat;
+    background-size: cover;
+    width: 50vw;
+    grid-area: getUpdatesImg;
+}
+
+#getUpdates_section11 .getUpdatesText{
+    padding: 130px 100px;
+    grid-area: getUpdatesText;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "h1 h1 h1"
+    "p p p"
+    "input input input"
+    ". joinus .";
+}
+
+#getUpdates_section11 .getUpdatesText h1{
+    font-size: 2.8rem;
+    line-height: 3.1rem;
+    grid-area: h1;
+}
+
+#getUpdates_section11 .getUpdatesText p{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    grid-area: p;
+}
+
+#getUpdates_section11 .getUpdatesText input{
+    margin-top: 30px;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    background-color: #dbd1d1;
+    grid-area: input;
+}
+
+#getUpdates_section11 .getUpdatesText .joinus{
+    grid-area: joinus;
+    margin-top: 50px;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    border-radius: 4px;
+    border-style: none;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    background-color: #CF4532;
+    color: #ffffff;
+}
+/* footer */
+footer{
+    background: #95AFBF;
+    color: #1f0101;
+    display: grid;
+    grid-template-areas: 
+    "companyAddress"
+    "copyRight";
+    font-size: 1.1rem;
+}
+
+footer .companyAddress{
+    grid-area: companyAddress;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "addressInfo socialLinks";
+    padding: 60px 0 40px 0;
+}
+
+footer .copyRight{
+    grid-area: copyRight;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+footer .companyAddress p,dl{
+    padding: 0 50px;
+    margin:0 80px;  
+}
+
+footer .companyAddress p {
+    grid-area: addressInfo;
+    text-align: center;
+}
+
+footer .companyAddress p a{
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    color: rgb(41, 4, 19);
+}
+
+footer .companyAddress p a:hover{
+    color: #CF4532;
+}
+
+footer .companyAddress p span{
+    padding-top: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+footer .companyAddress dl{
+    grid-area: socialLinks;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .companyAddress dl dt{
+    display: inline-block;
+    margin-right: 30px;
+    padding-top: 10px;
+}
+
+footer dl dt a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: 99px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+footer dl dt.twitter a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-twitter-64.png);
+}
+
+footer dl dt.instagram a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-instagram-64.png);
+}
+
+footer dl dt.facebook a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-facebook-f-64.png);
+}
+
+footer dl dt.linkedin a {
+    background-image: url(../images/footerSocialMediaIcons/icons8-linkedin-2-64.png);
+}
+
+@media only screen and (max-width: 1024px) {
+    nav{
+        
+        grid-template-areas: 
+        " . . logo . ."
+        "navigation navigation navigation navigation navigation";
+        padding-top: 10px;
+    }
+    
+    nav ul{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+/* section 1 */
+
+#section1 div h1{
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+}
+
+#section1 div h3{
+    font-size: 1.4rem;
+    margin-top: 15px;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+
+#section1 div input{
+    margin-top: 50px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* section 2 */
+
+#ourMission_section2 div h2{
+    font-size: 2.2rem;
+    padding-top: 50px;
+    line-height: 2.5rem;
+}
+
+#ourMission_section2 div p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 50px;
+}
+
+#ourMission_section2 div .section2Img{
+    background: url(../images/section2.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 60vh;
+}
+
+/* section 3 */
+
+#howItWorks_section3 h2{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+}
+
+#howItWorks_section3 > div{
+    grid-column-gap: 70px;
+}
+
+.stepNumber{
+    font-size: 0.9rem;
+}
+
+.stepName{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+.stepDescription{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+/* section 4 */
+#ourVision_section4{
+    padding: 70px 110px;
+    grid-column-gap: 50px;
+}
+
+#ourVision_section4 h3{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#ourVision_section4 p{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+/* section 5 */
+#theCabins_section5 {
+    padding: 70px 110px;
+}
+
+#theCabins_section5 h2{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+}
+
+#theCabins_section5 > div{
+    
+    min-height: 30vh;
+    grid-column-gap: 70px;
+}
+
+#theCabins_section5 > div .cabinDescription h3{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+#theCabins_section5 > div .cabinDescription p{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+#theCabins_section5 > div .cabinDescription input{
+    margin-top: 55px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+/* section 7 */
+
+#customerReview_section7 blockquote{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+#customerReview_section7 p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 30px;  
+}
+
+/* section 8 */
+
+#nominateYourCity_section8 h2{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+#nominateYourCity_section8 div{
+    margin-top: 40px;
+    display: grid;
+    grid-area: userInputes;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "nominateYourCity nominateYourCity nominateYourCity"
+    ". firstName ."
+    ". zipCode ."
+    ". email ."
+    ". nominateButton .";
+}
+
+#nominateYourCity_section8 input{
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+#nominateYourCity_section8 .nominateButton{
+    margin-top: 45px;
+    color: #ffffff;
+}
+
+/* section 9 */
+#theJournal_section9 {
+    padding: 70px 110px;
+    display: grid;
+    grid-template-areas: 
+    "theJournal"
+    "journalDataListDIV";
+}
+
+#theJournal_section9 h2{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    
+}
+
+#theJournal_section9 > div div h3{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 15px 20px 0 20px;
+}
+
+#theJournal_section9 > div div p{
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+#theJournal_section9 > div .packingList div{
+    background: url(../images/camp1.jpg) no-repeat center center;
+    background-size: cover;
+    height: 20vh;
+}
+
+#theJournal_section9 > div .campfireRecipes div{
+    background: url(../images/camp2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 20vh;
+}
+
+#theJournal_section9 > div .juneReflections div{
+    background: url(../images/capm3.jpg) no-repeat center center;
+    background-size: cover;
+    height: 20vh;
+}
+
+/* section 10 */
+
+#bookYourCabin_section10 h2{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+#bookYourCabin_section10 input{
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* section 11 */
+
+#getUpdates_section11 .getUpdatesText{
+    padding: 130px 100px;
+    grid-area: getUpdatesText;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "h1 h1 h1"
+    "p p p"
+    "input input input "
+    ". joinus .";
+}
+
+#getUpdates_section11 .getUpdatesText h1{
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+}
+
+#getUpdates_section11 .getUpdatesText p{
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+#getUpdates_section11 .getUpdatesText input{
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+
+#getUpdates_section11 .getUpdatesText .joinus{
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+/* footer */
+footer{
+    font-size: 1rem;
+}
+
+footer .companyAddress{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    ". addressInfo socialLinks .";
+}
+
+footer .copyRight{
+    font-size: 0.9rem;
+}
+
+footer .companyAddress p a{
+    font-size: 1.1rem;
+}
+
+footer .companyAddress p span{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+footer .companyAddress dl{
+    grid-area: socialLinks;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .companyAddress dl dt{
+    margin-right: 0px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+/* section 1 */
+#section1 div h1{
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+
+#section1 div h3{
+    font-size: 1.1rem;
+    margin-top: 15px;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+/* section 2 */
+
+#ourMission_section2 div h2{
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+#ourMission_section2 div p{
+    font-size: 1.1rem;
+}
+
+#ourMission_section2 div .section2Img{
+    background: url(../images/section2.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+/* section 3 */
+#howItWorks_section3 {
+    padding: 70px 50px;
+}
+#howItWorks_section3 h2{
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+}
+
+#howItWorks_section3 > div{
+    grid-column-gap: 30px;
+}
+
+.stepNumber{
+    font-size: 0.8rem;
+}
+
+.stepName{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.stepDescription{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+/* section 4 */
+#ourVision_section4{
+    padding: 70px 50px;
+    grid-column-gap: 50px;
+}
+
+#ourVision_section4 h3{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+#ourVision_section4 p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+/* section 5 */
+#theCabins_section5 {
+    padding: 70px 50px;
+}
+
+#theCabins_section5 h2{
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+}
+
+#theCabins_section5 > div{
+    min-height: 30vh;
+    grid-column-gap: 50px;
+}
+
+#theCabins_section5 > div .cabinDescription h3{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+#theCabins_section5 > div .cabinDescription p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+#theCabins_section5 > div .cabinDescription input{
+    margin-top: 55px;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+}
+
+/* section 7 */
+
+#customerReview_section7 blockquote{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+/* section 8 */
+
+#nominateYourCity_section8 h2{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#nominateYourCity_section8 div{
+    margin-top: 30px;
+}
+
+#nominateYourCity_section8 input{
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+
+/* section 9 */
+#theJournal_section9 {
+    padding: 70px 50px;
+}
+#theJournal_section9 > div{
+    grid-column-gap: 20px;
+}
+#theJournal_section9 h2{
+    font-size: 2.1rem;
+    line-height: 2.4rem; 
+}
+
+#theJournal_section9 > div div h3{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding: 15px 15px 0 15px;
+}
+
+#theJournal_section9 > div div p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 15px;
+}
+
+/* section 10 */
+
+#bookYourCabin_section10 h2{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+#bookYourCabin_section10 input{
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+/* section 11 */
+
+#getUpdates_section11 .getUpdatesText{
+    padding: 130px 50px;
+}
+
+#getUpdates_section11 .getUpdatesText h1{
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+}
+
+#getUpdates_section11 .getUpdatesText p{
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+#getUpdates_section11 .getUpdatesText input{
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+
+#getUpdates_section11 .getUpdatesText .joinus{
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+/* footer */
+footer{
+    font-size: 1rem;
+}
+
+footer .companyAddress{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    ". addressInfo socialLinks .";
+}
+
+footer .copyRight{
+    font-size: 0.9rem;
+}
+
+footer .companyAddress p a{
+    font-size: 1.1rem;
+}
+
+footer .companyAddress p span{
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+footer .companyAddress dl{
+    grid-area: socialLinks;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .companyAddress dl dt{
+    margin-right: 0px;
+}
+}
